@@ -25,9 +25,6 @@ angular.module("angularApp", [])
     }
     $(window).scroll(function() {
         let topPosition = $(this).scrollTop();
-
-        console.log(topPosition);
-
         if(topPosition > 100) {
             $(".scrollTop").css("opacity","1");
         } else {

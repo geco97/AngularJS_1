@@ -13,11 +13,11 @@ body h3 {
     font-size: 12px;
 }
 
-#topbar_black {
+#topBarMain {
     background: #0e1b33;
 }
 
-#topbar {
+#TopBar {
     height: 40px;
     font-size: .8rem;
     padding: 10px 0;
@@ -26,7 +26,7 @@ body h3 {
 li {
     display: inline-block;
     padding-right: 1px;
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
 ul, i, strong, span {
@@ -235,7 +235,9 @@ ul, i, strong, span {
     font-size: .8rem;
     font-weight: 600;
 }
-
+.wrap-main-part{
+    margin-top:50px;
+}
 .card-img-top {
     min-width: 230px !important;
     max-width: 350px !important;
