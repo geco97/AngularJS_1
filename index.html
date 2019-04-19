@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="sv">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,9 +18,9 @@
 
 <body ng-app="angularApp">
     <div id="topBarMain">
-        <div id="TopBar" class="container-fluid col-md-9 ">
+        <div id="TopBar" class="container">
             <div class="row">
-                <div class="col-md-2" style="min-width: 180px;">
+                <div class="col-lg-2 col-md-2 col-sm-2" style="min-width: 180px;">
                     <ul>
                         <li><a href=""><i class="fab fa-facebook-f"></i></a></i></li>
                         <li><a href=""><i class="fab fa-twitter"></i></a></li>
@@ -30,13 +29,13 @@
                         <li><a href=""><i class="fab fa-youtube"></i></a></li>
                     </ul>
                 </div>
-                <div class="col-md-7">
+                <div class="col-lg-6 col-md-6 col-sm-6">
                     <ul>
                         <li><a href=""><strong>FAQ</strong></a></li>
                         <li><a href=""><strong>TERMS</strong></a></li>
                     </ul>
                 </div>
-                <div class="col-md-3" style="text-align:right">
+                <div class="col-lg-4 col-md-4 col-sm-4" style="text-align:right">
                     <ul>
                         <li><a href=""><i class="fas fa-envelope"></i></a></li>
                         <li><i><a href=""><span>info@webmail.com</span></a></i></li>
@@ -45,7 +44,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid col-md-9 p-0">
+    <div class="container p-0">
         <header class="headerside container-fluid">
             <div id="header-dicoration" class="row">
                 <div id="logo" class="col-md-2 p-0 m-0">
@@ -91,8 +90,8 @@
             </div>
         </header>
     </div>
-    <div class="row m-0" id="firstpart" style="background-image:url('Media/bg1.jpg') ">
-        <div class="container-fluid col-md-9">
+    <div class="container-fluid m-0" id="firstpart" style="background-image:url('Media/bg1.jpg') ">
+        <div class="container">
             <p>DIGITAL MARKETING</p>
             <h1>Product Store</h1>
             <div>
@@ -104,8 +103,8 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid  col-md-8 p-0" style="margin-top: 120px;">
-        <div class="container-fluid wrap-first-box col-md-12 row">
+    <div class="container p-0" style="margin-top: 120px;">
+        <div class="container wrap-first-box col-md-12 row">
 
             <div class="col-md-3 wrap-first-box-parts">
                 <div><i> <a href=""><img src="Media/icon1.png" alt=""></a></i></div>
@@ -186,11 +185,8 @@
                                                 <div class="col-md-6 bl-0 ml-0" align="left"><span
                                                         class="card-text">{{ item.price }}.00 kr</span></div>
                                                 <div class="col-md-6 br-0 mr-0" align="right">
-                                                    <div id="stars">
-                                                        <span ng-repeat=" arr in item.rating "
-                                                            style="display:inline-flex;">
-                                                            <i class="fas fa-star">{{arr.j}}</i>
-                                                        </span>
+                                                    <div class="stars-outer">
+                                                        <div class="stars-inner" ng-style="{ 'width': rating(item.rating) }"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -218,9 +214,8 @@
         </div>
 
     </div>
-    <footer class="row m-0" style="background-image:url('Media/20_shop.jpg') ">
-        <div class="col-md-2 p-0"></div>
-        <div id="footer" class="col-md-8 p-0">
+    <footer class="container-fluid m-0" style="background-image:url('Media/20_shop.jpg') ">
+        <div id="footer" class="container">
             <div id="footer-in">
                 <div id="footer-in-first-line" class="row">
                     <div id="footer-in-logogroup" class="col-md-4 p-0 m-0">
